@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="shortcut icon" href="#" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="music-content">
+        <button class="play-list">
+          Playlist
+          <i class="fas fa-list"></i>
+        </button>
+        <section class="music-content-box">
+          <div class="thumbnail-song">
+            <img
+              src="https://i.pinimg.com/564x/7d/1f/49/7d1f498862b37e4672dd72d55ca6cd44.jpg"
+              alt=""
+            />
+          </div>
+          <div class="content-wrapper">
+            <div class="info-song">
+              <p class="song-name">INI - Eluveitie</p>
+              <p class="author">Eluvi</p>
+            </div>
+          </div>
+        </section>
+        <audio id="audio"></audio>
+        <div class="bar-song">
+          <span class="current-time">00:00</span>
+          <div class="progress"><div class="progress-bar"></div></div>
+          <span class="duration-time">03:22</span>
+        </div>
+        <div class="song-footer">
+          <button class="back">
+            <i class="fas fa-step-backward"></i>
+          </button>
+          <button class="play-song">
+            <i class="fas fa-play"></i>
+          </button>
+          <button class="forward">
+            <i class="fas fa-step-forward"></i>
+          </button>
+        </div>
+      </div>
+      <div class="playlist-box">
+        <div class="header">
+          <button class="button go-home">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="text"><p>Playlist</p></div>
+        </div>
+        <div class="list-song"></div>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
