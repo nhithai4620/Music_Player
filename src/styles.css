@@ -9,11 +9,16 @@ html {
 }
 
 body {
-    padding: 5rem 0;
     font-size: 1.6rem;
     min-height: 100vh;
-    background: #f5e0e5;
+    background-image: url('./image/bg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
 }
+
+
 
 button {
     outline: none;
@@ -27,8 +32,8 @@ button {
     background-color: #fdfbfc;
     box-shadow: 0 5px 10px rgb(223,223,223);
     border-radius: 15px;
-    height: 100%;
-    margin: 0 auto;
+    height: 450px;
+    margin: 150px auto;
     position: relative;
 }
 
